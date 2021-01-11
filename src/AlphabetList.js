@@ -5,7 +5,7 @@ const mapArrToMap = (arr, keyName) => {
   const map = new Map();
   var Regx = /^[A-Za-z]$/;
   arr.forEach((item) => {
-    console,log('lib check item ---> ', item)
+    console.log('lib check item ---> ', item)
     let firstChar = keyName ? item[0][keyName] : item[0];
     if (!Regx.test(firstChar)) {
       firstChar = '#'
