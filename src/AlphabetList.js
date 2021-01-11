@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 import AlphabetItem from './AlphabetItem';
 
 const mapArrToMap = (arr, keyName) => {
-  console.log('arr ---> ', arr)
-  console.log('keyName ----> ', keyName)
   const map = new Map();
   var Regx = /^[A-Za-z]$/;
   arr.forEach((item) => {
-    let firstChar = keyName ? item[keyName][0] : item[0];
+    let firstChar = keyName ? item[0][keyName] : item[0];
     if (!Regx.test(firstChar)) {
       firstChar = '#'
     } else {
