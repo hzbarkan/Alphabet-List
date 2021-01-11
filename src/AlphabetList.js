@@ -84,7 +84,7 @@ class AlphabetList extends Component {
         <div
           style={{
             position: 'absolute',
-            top: 16,
+            top: -20,
             right: 16,
             color: '#AAA'
           }}
