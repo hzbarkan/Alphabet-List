@@ -45,7 +45,7 @@ class AlphabetList extends Component {
       <div
         className={className}
         style={{
-          position: 'absolute',
+          position: 'relative',
           ...(style ? style : {})
         }}
       >
@@ -54,7 +54,8 @@ class AlphabetList extends Component {
             width: '100%',
             height: '100%',
             overflow: 'auto',
-            paddingRight: 12,
+            paddingRight: 70,
+            marginRight: -16,
           }}
           ref={(ref) => { this.scroller = ref }}
         >
@@ -82,8 +83,8 @@ class AlphabetList extends Component {
         </div>
         <div
           style={{
-            position: 'fixed',
-            top: 60,
+            position: 'absolute',
+            top: 16,
             right: 16,
             color: '#AAA'
           }}
