@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import AlphabetItem from './AlphabetItem';
 
-const mapArrToMap = (arr) => {
+const mapArrToMap = (arr, keyName) => {
   const map = new Map();
   var Regx = /^[A-Za-z]$/;
   arr.forEach((item) => {
-    let firstChar = item[0];
+    let firstChar = keyName ? item[keyName][0] : item[0];
     if (!Regx.test(firstChar)) {
       firstChar = '#'
     } else {
@@ -36,8 +36,8 @@ class AlphabetList extends Component {
     this.scroller.scrollTop = this.mapPos.get(char)
   }
   render() {
-    const { generateFn, style, data, className } = this.props;
-    const map = mapArrToMap(data);
+    const { generateFn, style, data, className, keyName } = this.props;
+    const map = mapArrToMap(data, keyName);
     this.mapPos = new Map();
     const keyArr = Array.from(map.keys())
     keyArr.sort();
