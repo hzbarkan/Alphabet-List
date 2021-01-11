@@ -15,9 +15,14 @@ class AlphabetItem extends Component {
       >
         <div
           style={{
-            color: 'white',
+            color: '#605C66',
+            fontWeight: 700,
+            fontSize: '12px',
+            borderBottom: '1px solid #EBE6EF',
+            paddingBottom: '12px',
+            marginBottom: '12px',
           }}>
-          {`${id}${suffix}`}
+          {`${id}`}
         </div>
         <div
           style={{

@@ -82,9 +82,9 @@ class AlphabetList extends Component {
         </div>
         <div
           style={{
-            position: 'absolute',
-            top: 12,
-            right: 12,
+            position: 'fixed',
+            top: 60,
+            right: 16,
             color: '#AAA'
           }}
         >
@@ -94,10 +94,11 @@ class AlphabetList extends Component {
                 <div
                   key={item}
                   style={{
-                    fontSize: 9.5,
+                    fontSize: '12px',
+                    fontWeight: 700,
                     verticalAlign: 'top',
                     cursor: 'pointer',
-                    color: '#AAA'
+                    color: '#9C97A3'
                   }}
                   onClick={() => { this.handleAlphaClick(item) }}
                 >
