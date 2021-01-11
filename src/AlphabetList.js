@@ -53,7 +53,7 @@ class AlphabetList extends Component {
         <div
           style={{
             width: '100%',
-            height: '100vh',
+            height: 'calc(100vh - 90px)',
             overflow: 'scroll',
             paddingRight: 70,
           }}
