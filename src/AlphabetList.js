@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import AlphabetItem from './AlphabetItem';
 
 const mapArrToMap = (arr, keyName) => {
+  console.log('arr ---> ', arr)
+  console.log('keyName ----> ', keyName)
   const map = new Map();
   var Regx = /^[A-Za-z]$/;
   arr.forEach((item) => {
