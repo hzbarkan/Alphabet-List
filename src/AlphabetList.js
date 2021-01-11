@@ -46,6 +46,7 @@ class AlphabetList extends Component {
         className={className}
         style={{
           position: 'relative',
+          marginRight: -16,
           ...(style ? style : {})
         }}
       >
@@ -55,7 +56,6 @@ class AlphabetList extends Component {
             height: '100vh',
             overflow: 'scroll',
             paddingRight: 70,
-            marginRight: -16,
           }}
           ref={(ref) => { this.scroller = ref }}
         >
