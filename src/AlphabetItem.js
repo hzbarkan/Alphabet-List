@@ -27,7 +27,9 @@ class AlphabetItem extends Component {
         <div
           style={{
             marginTop: 4,
-            marginBottom: 8
+            marginBottom: 8,
+            display: 'flex',
+            flexDirection: 'row'
           }}
         >
           {this.props.children}
