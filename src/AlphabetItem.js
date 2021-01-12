@@ -29,7 +29,8 @@ class AlphabetItem extends Component {
             marginTop: 4,
             marginBottom: 8,
             display: 'flex',
-            flexDirection: 'row'
+            flexDirection: 'row',
+            flexWrap: 'wrap'
           }}
         >
           {this.props.children}
