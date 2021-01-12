@@ -25,7 +25,7 @@ class AlphabetItem extends Component {
           }}>
           {`${id}`}
         </div>
-        <div className="grid">
+        <div className="brand-list-grid">
           {this.props.children}
         </div>
       </div>

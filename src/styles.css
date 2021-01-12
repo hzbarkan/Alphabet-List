@@ -1,4 +1,4 @@
-.grid {
+.brand-list-grid {
     margin-top: 0;
     margin-bottom: 28px;
     display: flex;
@@ -7,7 +7,7 @@
     justify-content: space-between;
 }
 
-.grid::after {
+.brand-list-::after {
     content: '';
     flex: auto;
 }
