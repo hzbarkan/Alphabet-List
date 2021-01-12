@@ -26,11 +26,12 @@ class AlphabetItem extends Component {
         </div>
         <div
           style={{
-            marginTop: 4,
-            marginBottom: 8,
+            marginTop: 0,
+            marginBottom: 28,
             display: 'flex',
             flexDirection: 'row',
-            flexWrap: 'wrap'
+            flexWrap: 'wrap',
+            justifyContent: 'space-between'
           }}
         >
           {this.props.children}
