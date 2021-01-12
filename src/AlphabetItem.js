@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './styles.css';
 
 class AlphabetItem extends Component {
   componentDidMount() {
@@ -24,16 +25,7 @@ class AlphabetItem extends Component {
           }}>
           {`${id}`}
         </div>
-        <div
-          style={{
-            marginTop: 0,
-            marginBottom: 28,
-            display: 'flex',
-            flexDirection: 'row',
-            flexWrap: 'wrap',
-            justifyContent: 'space-between'
-          }}
-        >
+        <div className="grid">
           {this.props.children}
         </div>
       </div>
