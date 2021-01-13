@@ -101,7 +101,7 @@ class AlphabetList extends Component {
                     cursor: 'pointer',
                     color: '#9C97A3',
                     userSelect: 'none',
-                    lineHeight: 20
+                    lineHeight: '20px'
                   }}
                   onClick={() => { this.handleAlphaClick(item) }}
                 >
